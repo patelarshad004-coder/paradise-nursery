@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: #1f2a1f; }
+
+/* Landing page with background image */
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 24px;
+  background-image:
+    linear-gradient(rgba(10, 40, 20, 0.55), rgba(10, 40, 20, 0.55)),
+    url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.landing-content h1 { font-size: 3.2rem; margin: 0 0 8px; }
+.landing-content p { font-size: 1.2rem; margin: 0 0 24px; }
+.get-started-button {
+  background: #f2c94c;
+  color: #1f2a1f;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.get-started-button:hover { background: #e6b82f; }
+.get-started-button:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.landing-page .about-us { margin-top: 40px; color: #fff; }
